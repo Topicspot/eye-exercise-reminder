@@ -1,4 +1,3 @@
-```markdown
 # Eye Exercise Reminder 👁
 
 > **This README is written in two languages: English first, Russian second.**
@@ -136,12 +135,6 @@ eye-reminder/
 
 > *(Screenshots will be added here. Contributions welcome.)*
 
-| Setup Window | Reminder Popup |
-|---|---|
-| ![Setup Window](docs/screenshots/setup_window.png) | ![Reminder Popup](docs/screenshots/reminder_popup.png) |
-
-*Placeholder — actual screenshots not yet included in this repository.*
-
 ---
 
 ### 🔒 Privacy & Security
@@ -212,7 +205,7 @@ Please keep pull requests focused on a single change and include a clear descrip
 
 This project is released under the **MIT License**.
 
-> A `LICENSE` file has not yet been added to this repository. If you intend to use or distribute this software, please check with the author or add a `LICENSE` file before publishing.
+See the [`LICENSE`](LICENSE) file for the full text.
 
 ---
 
@@ -339,12 +332,6 @@ eye-reminder/
 
 > *(Скриншоты будут добавлены здесь. Приветствуются вклады.)*
 
-| Окно настройки | Окно напоминания |
-|---|---|
-| ![Окно настройки](docs/screenshots/setup_window.png) | ![Окно напоминания](docs/screenshots/reminder_popup.png) |
-
-*Заглушка — реальные скриншоты пока не добавлены в репозиторий.*
-
 ---
 
 ### 🔒 Конфиденциальность и безопасность
@@ -415,8 +402,7 @@ eye-reminder/
 
 Этот проект распространяется под лицензией **MIT**.
 
-> Файл `LICENSE` ещё не добавлен в репозиторий. Если вы планируете использовать или распространять это программное обеспечение, пожалуйста, уточните у автора или добавьте файл `LICENSE` перед публикацией.
-```
+Полный текст — в файле [`LICENSE`](LICENSE).
 ---
 
 ## ☕ Support the author
