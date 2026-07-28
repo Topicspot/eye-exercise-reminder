@@ -417,3 +417,28 @@ eye-reminder/
 
 > Файл `LICENSE` ещё не добавлен в репозиторий. Если вы планируете использовать или распространять это программное обеспечение, пожалуйста, уточните у автора или добавьте файл `LICENSE` перед публикацией.
 ```
+---
+
+## ☕ Support the author
+
+This project is free and MIT-licensed. If it saved you time, you can send a coffee — it directly funds the next feature.
+
+**USDT — Tron network (TRC-20) only:**
+TS9ywGeSyKQxiCszdKCHLR8DRAsnYCosNN
+> ⚠️ Send **USDT on the Tron (TRC-20) network only**. Tokens sent on Ethereum, BSC or any other network will be lost forever.
+> No account, no fees, no strings attached. A ⭐ star helps just as much.
+
+
+**Other languages / Другие языки**
+
+- **Українська:** Проєкт безкоштовний. Якщо він заощадив вам час — USDT лише в мережі TRC-20 на адресу вище; зірка ⭐ допомагає так само.
+- **Русский:** Проект бесплатный. Если он сэкономил вам время — USDT только в сети TRC-20 на адрес выше; звезда ⭐ помогает так же.
+- **Español:** El proyecto es gratuito. Si te ahorró tiempo — USDT solo por la red TRC-20 a la dirección de arriba; una estrella ⭐ ayuda igual.
+- **Deutsch:** Das Projekt ist kostenlos. Wenn es dir Zeit gespart hat — USDT nur über das TRC-20-Netzwerk an die obige Adresse; ein Stern ⭐ hilft genauso.
+- **Français:** Le projet est gratuit. S'il vous a fait gagner du temps — USDT uniquement via le réseau TRC-20 à l'adresse ci-dessus ; une étoile ⭐ aide tout autant.
+- **Português:** O projeto é gratuito. Se ele economizou seu tempo — USDT apenas pela rede TRC-20 para o endereço acima; uma estrela ⭐ ajuda da mesma forma.
+- **Türkçe:** Proje ücretsizdir. Size zaman kazandırdıysa — USDT yalnızca TRC-20 ağı üzerinden yukarıdaki adrese; bir yıldız ⭐ da aynı derecede yardımcı olur.
+- **中文:** 本项目完全免费。如果它为你节省了时间——请仅通过 TRC-20 网络将 USDT 发送到上面的地址；点个 ⭐ 星同样有帮助。
+- **日本語:** このプロジェクトは無料です。時間の節約になったなら、上記アドレスへ TRC-20 ネットワークのみで USDT を送ってください。⭐ スターも同じくらい助けになります。
+- **हिन्दी:** यह प्रोजेक्ट मुफ़्त है। अगर इसने आपका समय बचाया — ऊपर दिए पते पर केवल TRC-20 नेटवर्क से USDT भेजें; एक ⭐ स्टार भी उतनी ही मदद करता है।
+- **Bahasa Indonesia:** Proyek ini gratis. Jika menghemat waktu Anda — kirim USDT hanya melalui jaringan TRC-20 ke alamat di atas; bintang ⭐ juga sama membantunya.
