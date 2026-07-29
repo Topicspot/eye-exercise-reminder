@@ -1,20 +1,16 @@
-# Eye Exercise Reminder 👁
+# Eye Exercise Reminder
 
 > **This README is written in two languages: English first, Russian second.**
 > **Этот README написан на двух языках: сначала английский, затем русский.**
 
 ---
 
-<!-- Badges -->
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue?logo=python&logoColor=white)
 ![PyQt6](https://img.shields.io/badge/PyQt6-6.x-green?logo=qt&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?logo=windows)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
----
-
-## 🇬🇧 English
+## English
 
 ### Overview
 
@@ -22,26 +18,22 @@
 
 The reminder appears as a floating, always-on-top overlay window that displays an exercise instruction image. It is fully configurable, supports 12 languages, and can be launched silently without a console window.
 
----
-
-### ✨ Features
+### Features
 
 | Feature | Details |
 |---|---|
-| ⏱ Configurable interval | Set the reminder from 1 to 180 minutes |
-| 🕒 Snooze | Postpone the reminder by a fixed number of minutes |
-| 🌐 12 languages | EN, UK, RU, DE, ES, FR, IT, ZH, JA, PL, PT, TR |
-| 💾 Persistent settings | Language preference saved locally in JSON |
-| 🖼 Exercise image | Displays a local image file with eye exercise instructions |
-| 🎨 Neon/Cyberpunk UI | Dark-themed, animated overlay with glassmorphism effect |
-| 🔇 Silent launcher | Run without a console window using `start.pyw` |
-| 📌 Always on top | The overlay stays above all other windows |
-| 🖱 Draggable | Move the overlay anywhere on screen |
-| 🔒 Screen-capture exclusion | On Windows 10 (2004+), attempts to hide the window from screen capture tools *(see Notes)* |
+| Configurable interval | Set the reminder from 1 to 180 minutes |
+| Snooze | Postpone the reminder by a fixed number of minutes |
+| 12 languages | EN, UK, RU, DE, ES, FR, IT, ZH, JA, PL, PT, TR |
+| Persistent settings | Language preference saved locally in JSON |
+| Exercise image | Displays a local image file with eye exercise instructions |
+| Neon/Cyberpunk UI | Dark-themed, animated overlay with glassmorphism effect |
+| Silent launcher | Run without a console window using `start.pyw` |
+| Always on top | The overlay stays above all other windows |
+| Draggable | Move the overlay anywhere on screen |
+| Screen-capture exclusion | On Windows 10 (2004+), attempts to hide the window from screen capture tools *(see Notes)* |
 
----
-
-### 📋 Requirements
+### Requirements
 
 - **Python** 3.11 or newer
 - **PyQt6**
@@ -52,9 +44,7 @@ pip install PyQt6
 
 > No other third-party packages are required.
 
----
-
-### 📦 Installation
+### Installation
 
 1. **Clone or download** the repository:
 
@@ -73,9 +63,7 @@ pip install PyQt6
    The default expected filename is `eye_exercises.png`.  
    You can change this in the constants at the top of `eye_reminder.py`.
 
----
-
-### ▶ How to Run
+### How to Run
 
 **With console output** (recommended for first run / debugging):
 
@@ -98,9 +86,7 @@ To launch the app automatically when Windows starts:
 1. Press `Win + R`, type `shell:startup`, and press Enter.
 2. Create a shortcut to `start.pyw` in the folder that opens.
 
----
-
-### ⚙ Configuration
+### Configuration
 
 All configuration happens at startup through the **Setup Window** that appears when you first launch the app.
 
@@ -114,9 +100,7 @@ All configuration happens at startup through the **Setup Window** that appears w
 
 The selected language is automatically saved to `eye_reminder_settings.json` and restored on next launch.
 
----
-
-### 📁 File Structure
+### File Structure
 
 ```
 eye-exercise-reminder/
@@ -129,23 +113,13 @@ eye-exercise-reminder/
 
 > `eye_reminder_settings.json` is created automatically. You do not need to create it manually.
 
----
-
-### 🖼 Screenshots
-
-> *(Screenshots will be added here. Contributions welcome.)*
-
----
-
-### 🔒 Privacy & Security
+### Privacy & Security
 
 - **Local only.** Based on the source code, this application does not make any network requests and does not transmit data to any server.
 - **Settings storage.** The only file written to disk is `eye_reminder_settings.json`, which stores your selected language code only.
 - **No analytics.** There is no telemetry, crash reporting, or usage tracking of any kind.
 
----
-
-### 📝 Notes & Disclaimer
+### Notes & Disclaimer
 
 #### Screen-Capture Exclusion (Windows)
 
@@ -156,26 +130,24 @@ When running on Windows, the application calls `SetWindowDisplayAffinity` with t
 - This feature requires **Windows 10 version 2004 or later**. On older versions of Windows, the call may have no effect or behave differently.
 - Effectiveness may vary depending on the screen-capture software or method used.
 - This feature is provided on a best-effort basis. **The application does not guarantee complete invisibility in all capture scenarios.**
-- If the Windows API call fails (e.g., due to permissions or OS version), the app continues to work normally — stealth is treated as optional.
+- If the Windows API call fails (e.g., due to permissions or OS version), the app continues to work normally; stealth is treated as optional.
 
 #### Fonts
 
 The application uses `Segoe UI` and `Consolas`, which are standard Windows fonts. On non-Windows systems these may fall back to system defaults, potentially affecting the visual appearance.
 
----
-
-### 🛠 Troubleshooting
+### Troubleshooting
 
 **The window doesn't appear after the interval:**
 - Make sure you pressed **Start Reminder** in the Setup Window.
-- Check the console output if you launched with `python eye_reminder.py` — it logs each timer event.
+- Check the console output if you launched with `python eye_reminder.py`; it logs each timer event.
 
 **The image is not displayed:**
 - Verify that `eye_exercises.png` (or your custom filename) exists in the same directory as `eye_reminder.py`.
 - Check that `IMAGE_PATH` at the top of the script matches your filename exactly.
 
 **The app crashes when changing language:**
-- Ensure you are using the latest version of this file — an earlier version had a known bug with layout teardown on language change that has since been fixed.
+- Ensure you are using the latest version of this file: an earlier version had a known bug with layout teardown on language change that has since been fixed.
 
 **Silent launch doesn't work:**
 - `start.pyw` requires `pythonw.exe` to be on your PATH, which is included in a standard Python for Windows installation.
@@ -185,23 +157,19 @@ The application uses `Segoe UI` and `Consolas`, which are standard Windows fonts
 - This feature requires Windows 10 version 2004 or later.
 - Some capture tools may not be affected by `WDA_EXCLUDEFROMCAPTURE`. This is a known OS-level limitation.
 
----
-
-### 🤝 Contributing
+### Contributing
 
 Contributions are welcome! Here are some ways you can help:
 
-- 🐛 **Report bugs** by opening an Issue
-- 🌍 **Improve translations** for existing languages
-- ➕ **Add a new language** by adding an entry to the `LANGS` dictionary in `eye_reminder.py`
-- 🖼 **Add real screenshots** to the `docs/screenshots/` folder
-- 💡 **Suggest features** via Issues or Discussions
+- **Report bugs** by opening an Issue
+- **Improve translations** for existing languages
+- **Add a new language** by adding an entry to the `LANGS` dictionary in `eye_reminder.py`
+- **Add real screenshots** to the `docs/screenshots/` folder
+- **Suggest features** via Issues or Discussions
 
 Please keep pull requests focused on a single change and include a clear description.
 
----
-
-### 📄 License
+### License
 
 This project is released under the **MIT License**.
 
@@ -209,9 +177,7 @@ See the [`LICENSE`](LICENSE) file for the full text.
 
 ---
 
----
-
-## 🇷🇺 Русский
+## Русский
 
 ### Обзор
 
@@ -219,26 +185,22 @@ See the [`LICENSE`](LICENSE) file for the full text.
 
 Напоминание появляется в виде плавающего окна поверх всех остальных окон и отображает изображение с инструкциями по упражнениям. Приложение полностью настраиваемо, поддерживает 12 языков и может запускаться в тихом режиме — без окна консоли.
 
----
-
-### ✨ Возможности
+### Возможности
 
 | Функция | Описание |
 |---|---|
-| ⏱ Настраиваемый интервал | Установка напоминания от 1 до 180 минут |
-| 🕒 Отложить | Перенос напоминания на фиксированное количество минут |
-| 🌐 12 языков | EN, UK, RU, DE, ES, FR, IT, ZH, JA, PL, PT, TR |
-| 💾 Сохранение настроек | Выбранный язык сохраняется локально в JSON-файле |
-| 🖼 Изображение упражнений | Отображает локальный файл с инструкциями по упражнениям |
-| 🎨 Неон/Киберпанк интерфейс | Тёмная тема, анимированный оверлей с эффектом стекла |
-| 🔇 Тихий запуск | Запуск без окна консоли через `start.pyw` |
-| 📌 Поверх всех окон | Оверлей всегда отображается поверх других окон |
-| 🖱 Перетаскивание | Окно можно переместить в любое место экрана |
-| 🔒 Скрытие при захвате экрана | На Windows 10 (2004+) предпринимается попытка скрыть окно от инструментов захвата экрана *(см. Примечания)* |
+| Настраиваемый интервал | Установка напоминания от 1 до 180 минут |
+| Отложить | Перенос напоминания на фиксированное количество минут |
+| 12 языков | EN, UK, RU, DE, ES, FR, IT, ZH, JA, PL, PT, TR |
+| Сохранение настроек | Выбранный язык сохраняется локально в JSON-файле |
+| Изображение упражнений | Отображает локальный файл с инструкциями по упражнениям |
+| Неон/Киберпанк интерфейс | Тёмная тема, анимированный оверлей с эффектом стекла |
+| Тихий запуск | Запуск без окна консоли через `start.pyw` |
+| Поверх всех окон | Оверлей всегда отображается поверх других окон |
+| Перетаскивание | Окно можно переместить в любое место экрана |
+| Скрытие при захвате экрана | На Windows 10 (2004+) предпринимается попытка скрыть окно от инструментов захвата экрана *(см. Примечания)* |
 
----
-
-### 📋 Требования
+### Требования
 
 - **Python** версии 3.11 или новее
 - **PyQt6**
@@ -249,9 +211,7 @@ pip install PyQt6
 
 > Никаких других сторонних пакетов не требуется.
 
----
-
-### 📦 Установка
+### Установка
 
 1. **Клонируйте или скачайте** репозиторий:
 
@@ -270,9 +230,7 @@ pip install PyQt6
    По умолчанию ожидается файл с именем `eye_exercises.png`.  
    Имя файла можно изменить в константах в начале `eye_reminder.py`.
 
----
-
-### ▶ Запуск
+### Запуск
 
 **С выводом в консоль** (рекомендуется при первом запуске или для отладки):
 
@@ -295,9 +253,7 @@ pythonw start.pyw
 1. Нажмите `Win + R`, введите `shell:startup` и нажмите Enter.
 2. Создайте ярлык на файл `start.pyw` в открывшейся папке.
 
----
-
-### ⚙ Настройка
+### Настройка
 
 Все настройки выполняются при запуске через **окно настройки**, которое появляется при первом запуске приложения.
 
@@ -311,9 +267,7 @@ pythonw start.pyw
 
 Выбранный язык автоматически сохраняется в `eye_reminder_settings.json` и восстанавливается при следующем запуске.
 
----
-
-### 📁 Структура файлов
+### Структура файлов
 
 ```
 eye-exercise-reminder/
@@ -326,23 +280,13 @@ eye-exercise-reminder/
 
 > Файл `eye_reminder_settings.json` создаётся автоматически. Создавать его вручную не нужно.
 
----
-
-### 🖼 Скриншоты
-
-> *(Скриншоты будут добавлены здесь. Приветствуются вклады.)*
-
----
-
-### 🔒 Конфиденциальность и безопасность
+### Конфиденциальность и безопасность
 
 - **Только локально.** На основании исходного кода приложение не выполняет сетевых запросов и не передаёт никакие данные на серверы.
 - **Хранение настроек.** Единственный файл, записываемый на диск, — `eye_reminder_settings.json`. В нём хранится только код выбранного языка.
 - **Без аналитики.** Приложение не содержит телеметрии, отчётов об ошибках или отслеживания использования.
 
----
-
-### 📝 Примечания и отказ от ответственности
+### Примечания и отказ от ответственности
 
 #### Скрытие при захвате экрана (Windows)
 
@@ -359,9 +303,7 @@ eye-exercise-reminder/
 
 Приложение использует `Segoe UI` и `Consolas` — стандартные шрифты Windows. На других операционных системах они могут быть заменены системными шрифтами по умолчанию, что может повлиять на внешний вид интерфейса.
 
----
-
-### 🛠 Устранение неполадок
+### Устранение неполадок
 
 **Окно не появляется после истечения интервала:**
 - Убедитесь, что вы нажали кнопку **Запустить напоминалку** в окне настройки.
@@ -382,50 +324,40 @@ eye-exercise-reminder/
 - Эта функция требует Windows 10 версии 2004 или новее.
 - Некоторые инструменты захвата могут не реагировать на флаг `WDA_EXCLUDEFROMCAPTURE`. Это известное ограничение на уровне операционной системы.
 
----
-
-### 🤝 Участие в разработке
+### Участие в разработке
 
 Вклад в проект приветствуется! Вот несколько способов помочь:
 
-- 🐛 **Сообщайте об ошибках**, открывая Issue
-- 🌍 **Улучшайте переводы** для существующих языков
-- ➕ **Добавляйте новые языки**, добавив запись в словарь `LANGS` в `eye_reminder.py`
-- 🖼 **Добавляйте скриншоты** в папку `docs/screenshots/`
-- 💡 **Предлагайте функции** через Issues или Discussions
+- **Сообщайте об ошибках**, открывая Issue
+- **Улучшайте переводы** для существующих языков
+- **Добавляйте новые языки**, добавив запись в словарь `LANGS` в `eye_reminder.py`
+- **Добавляйте скриншоты** в папку `docs/screenshots/`
+- **Предлагайте функции** через Issues или Discussions
 
 Пожалуйста, делайте pull request сфокусированными на одном изменении и включайте понятное описание.
 
----
-
-### 📄 Лицензия
+### Лицензия
 
 Этот проект распространяется под лицензией **MIT**.
 
 Полный текст — в файле [`LICENSE`](LICENSE).
 
----
-
 ## ☕ Support the author
 
-This project is free and MIT-licensed. If it saved you time, you can send a coffee — it directly funds the next feature.
+This project is free and MIT-licensed. If it saved you time, you can send a coffee.
 
-**USDT — Tron network (TRC-20) only:**
+**USDT, Tron network (TRC-20) only:**
+
+```
 TS9ywGeSyKQxiCszdKCHLR8DRAsnYCosNN
-> ⚠️ Send **USDT on the Tron (TRC-20) network only**. Tokens sent on Ethereum, BSC or any other network will be lost forever.
-> No account, no fees, no strings attached. A ⭐ star helps just as much.
+```
 
+<details>
+<summary>Другие языки / Other languages</summary>
 
-**Other languages / Другие языки**
+- **Українська:** проєкт безкоштовний. Якщо він заощадив вам час — можна підтримати автора,
+  USDT у мережі Tron (TRC-20), адреса вище.
+- **Русский:** проект бесплатный. Если он сэкономил вам время, можно поддержать автора,
+  USDT в сети Tron (TRC-20), адрес выше.
 
-- **Українська:** Проєкт безкоштовний. Якщо він заощадив вам час — USDT лише в мережі TRC-20 на адресу вище; зірка ⭐ допомагає так само.
-- **Русский:** Проект бесплатный. Если он сэкономил вам время — USDT только в сети TRC-20 на адрес выше; звезда ⭐ помогает так же.
-- **Español:** El proyecto es gratuito. Si te ahorró tiempo — USDT solo por la red TRC-20 a la dirección de arriba; una estrella ⭐ ayuda igual.
-- **Deutsch:** Das Projekt ist kostenlos. Wenn es dir Zeit gespart hat — USDT nur über das TRC-20-Netzwerk an die obige Adresse; ein Stern ⭐ hilft genauso.
-- **Français:** Le projet est gratuit. S'il vous a fait gagner du temps — USDT uniquement via le réseau TRC-20 à l'adresse ci-dessus ; une étoile ⭐ aide tout autant.
-- **Português:** O projeto é gratuito. Se ele economizou seu tempo — USDT apenas pela rede TRC-20 para o endereço acima; uma estrela ⭐ ajuda da mesma forma.
-- **Türkçe:** Proje ücretsizdir. Size zaman kazandırdıysa — USDT yalnızca TRC-20 ağı üzerinden yukarıdaki adrese; bir yıldız ⭐ da aynı derecede yardımcı olur.
-- **中文:** 本项目完全免费。如果它为你节省了时间——请仅通过 TRC-20 网络将 USDT 发送到上面的地址；点个 ⭐ 星同样有帮助。
-- **日本語:** このプロジェクトは無料です。時間の節約になったなら、上記アドレスへ TRC-20 ネットワークのみで USDT を送ってください。⭐ スターも同じくらい助けになります。
-- **हिन्दी:** यह प्रोजेक्ट मुफ़्त है। अगर इसने आपका समय बचाया — ऊपर दिए पते पर केवल TRC-20 नेटवर्क से USDT भेजें; एक ⭐ स्टार भी उतनी ही मदद करता है।
-- **Bahasa Indonesia:** Proyek ini gratis. Jika menghemat waktu Anda — kirim USDT hanya melalui jaringan TRC-20 ke alamat di atas; bintang ⭐ juga sama membantunya.
+</details>
