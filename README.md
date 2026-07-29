@@ -59,8 +59,8 @@ pip install PyQt6
 1. **Clone or download** the repository:
 
 ```bash
-git clone https://github.com/your-username/eye-reminder.git
-cd eye-reminder
+git clone https://github.com/Topicspot/eye-exercise-reminder.git
+cd eye-exercise-reminder
 ```
 
 2. **Install the dependency:**
@@ -119,7 +119,7 @@ The selected language is automatically saved to `eye_reminder_settings.json` and
 ### 📁 File Structure
 
 ```
-eye-reminder/
+eye-exercise-reminder/
 ├── eye_reminder.py              # Main application (all logic and UI)
 ├── start.pyw                    # Silent launcher for Windows (no console)
 ├── eye_exercises.png            # Exercise instruction image (required)
@@ -256,8 +256,8 @@ pip install PyQt6
 1. **Клонируйте или скачайте** репозиторий:
 
 ```bash
-git clone https://github.com/your-username/eye-reminder.git
-cd eye-reminder
+git clone https://github.com/Topicspot/eye-exercise-reminder.git
+cd eye-exercise-reminder
 ```
 
 2. **Установите зависимость:**
@@ -316,7 +316,7 @@ pythonw start.pyw
 ### 📁 Структура файлов
 
 ```
-eye-reminder/
+eye-exercise-reminder/
 ├── eye_reminder.py              # Основное приложение (вся логика и интерфейс)
 ├── start.pyw                    # Тихий запускатор для Windows (без консоли)
 ├── eye_exercises.png            # Изображение с упражнениями (обязательно)
@@ -403,6 +403,7 @@ eye-reminder/
 Этот проект распространяется под лицензией **MIT**.
 
 Полный текст — в файле [`LICENSE`](LICENSE).
+
 ---
 
 ## ☕ Support the author
